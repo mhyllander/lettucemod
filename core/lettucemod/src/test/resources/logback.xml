@@ -1,0 +1,16 @@
+<configuration>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>
+                %date{yyyy-MM-dd'T'HH:mm:ss.SSS} [%level] %logger{1} - %msg%n
+            </pattern>
+        </encoder>
+    </appender>
+
+    <!-- <logger name="io.lettuce.core.api" level="INFO" />
+    <logger name="io.lettuce.core.protocol" level="INFO" /> -->
+
+    <root level="DEBUG">
+        <appender-ref ref="STDOUT" />
+    </root>
+</configuration>
